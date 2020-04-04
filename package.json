@@ -2,12 +2,18 @@
   "name": "tsp",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js.js",
+  "engines" : {
+    "node" : "10.16.3",
+    "npm" : "6.9.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
