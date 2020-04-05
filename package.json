@@ -3,17 +3,23 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js.js",
-  "engines" : {
-    "node" : "10.16.3",
-    "npm" : "6.9.0"
+  "engines": {
+    "node": "10.16.3",
+    "npm": "6.9.0"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "concurrently": "^5.1.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.7",
+    "nodemon": "^2.0.2"
   }
 }
