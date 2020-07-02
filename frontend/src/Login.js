@@ -44,7 +44,7 @@ function Login() {
 							Forgot &nbsp;
 						</span>
 						<a className="txt2" href="#">
-							Password?
+							Password??
 						</a>
 					</div>
 				</form>
